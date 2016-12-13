@@ -12,7 +12,8 @@ include("navbar.php");
 	
 	<?php 
 		if(isset($_GET['page'])){
-			echo "not set";
+			$page = $_GET['page'];
+			include("pages/$page.php");
 		}else{
 			?><img src="images/banner.jpg" width="1350" height="500" ></img><?php
 		}
@@ -24,7 +25,16 @@ include("navbar.php");
 
 <!--Secondary content -->
 <div class="container-fluid" id="secondary-content">
-secondary content
+<?php
+	if(isset($_GET['page'])){
+		if(strcmp($_GET['page'], "category") == 0 ){
+			include("pages/categorySecContent.php");
+		}
+	}else{
+		include("indexSendCont.php");
+
+	}
+?>
 </div>
 <!--Secondary content ends -->
 

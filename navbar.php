@@ -1,8 +1,8 @@
 <!--Navigation bar -->
 <div class="container-fullwidth" id="header-container">
 	<div class="row" id="header-logo">
-		<div class="col-xs-3" id="sing-flag" style="color: #928080"><b>SGD</b> <img src="images/singapore-flag.png" height="22px" width="35px"  style="border: 1px solid #f3f2f2;"></div>
-		<div class="col-xs-6"><center><img src="images/HWDesign.png"></center></div>
+		<div class="col-xs-3" id="sing-flag"><b>SGD</b> <img src="images/singapore-flag.png" height="22px" width="35px"  style="border: 1px solid #f3f2f2;"></div>
+		<div class="col-xs-6"><center><a href="index.php"><img src="images/HWDesign.png"></center></a></div>
 		<div class="col-xs-3"></div>
 
 	</div>

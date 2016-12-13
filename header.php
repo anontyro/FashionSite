@@ -18,6 +18,5 @@
 	
 </head>
 <?php
-include("util/dbconnect.php")
-
+include("util/dbconnect.php");
 ?>
