@@ -10,4 +10,7 @@ if(mysqli_connect_errno()){
 	die("cannot access the database ".mysqli_connect_errno());
 }
 
+
+
+
  ?>

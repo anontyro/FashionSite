@@ -6,30 +6,40 @@
 		<div class="col-xs-3"></div>
 
 	</div>
+	<div class="container-fluid">
+		<div name="nav bar">
+			<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+		     		 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        	<span class="sr-only">Toggle navigation</span>
+		        	<span class="icon-bar"></span>
+		       		<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+	     			</button>
 
-	<div name="nav bar">
-		<nav class="navbar navbar-default">
-		<div class="container-fluid">
-		    <div class="navbar-header">
-	     		 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        	<span class="sr-only">Toggle navigation</span>
-	        	<span class="icon-bar"></span>
-	       		<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-     			</button>
+	   			</div>
 
-   			</div>
+	   			<div class="collapse navbar-collapse" id="nav-bar">
+					<ul class="nav navbar-nav">
+					<?php 
+					session_start();
+						include("categoryList.php");
 
-   			<div class="collapse navbar-collapse" id="nav-bar">
-				<ul class="nav navbar-nav">
-				<?php 
-					include("categoryList.php");
-				?>	
-				</ul>
-   			</div>
-			
-		</div>	
-		</nav>
+						if(isset($_SESSION['admin'])){
+							?>
+								<li><a href="index.php?page=admin">
+			<i class="fa fa-user-circle" aria-hidden="true"></i> <?php echo $_SESSION['admin']; ?></a></li>
+							<?php
+						}
+					?>	
+
+					</ul>
+	   			</div>
+				
+			</div>	
+			</nav>
+		</div>
 	</div>
 
 </div>

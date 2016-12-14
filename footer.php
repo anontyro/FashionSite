@@ -12,7 +12,8 @@
 		<div class="row" id="copyright">
 		<div class="col-xs-3"></div>
 		<div class="col-xs-6"><center> 
-			All rights reserved 2017©
+
+			All rights reserved <?php echo date("Y"); ?>©
 		</center></div>
 		<div class="col-xs-3"></div>
 	</div>

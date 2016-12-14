@@ -1,5 +1,10 @@
+<div id="index-content" >
+<p> 
 <?php
-
-echo "secondary content here and such";
-
+include_once("util/functions.php");
+$res = getContent("index-content" );
+echo $res[0];
 ?>
+</p>
+
+</div>

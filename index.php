@@ -15,7 +15,7 @@ include("navbar.php");
 			$page = $_GET['page'];
 			include("pages/$page.php");
 		}else{
-			?><img src="images/banner.jpg" width="1350" height="500" ></img><?php
+			?><img src="images/banner.jpg" width=100% height="500" ></img><?php
 		}
 	?>
 	
